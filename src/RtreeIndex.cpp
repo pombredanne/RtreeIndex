@@ -9,7 +9,13 @@
 #include <iostream>
 using namespace std;
 
-int main2() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+#include "spatialRtree/WrapperSpatialRtree.h"
+
+int main() {
+
+	WrapperSpatialRtree wsr;
+	wsr.run_spatialRtree();
+
+
 	return 0;
 }

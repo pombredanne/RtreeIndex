@@ -20,9 +20,11 @@ public:
 	SpatialRtree();
 	virtual ~SpatialRtree();
 
-	void loadData(vector<vector<float> > data);
+	void loadData(vector<vector<double> > data);
 
+	IStorageManager* msm;
 	ISpatialIndex* stree;
+
 };
 
 #endif /* SPATIALRTREE_SPATIALRTREE_H_ */
