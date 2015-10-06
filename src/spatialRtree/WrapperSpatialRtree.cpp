@@ -25,7 +25,7 @@ WrapperSpatialRtree::~WrapperSpatialRtree() {
 void test_toy(){
 	cout<<"prepare toy data for testing"<<endl;
 	int dim = 500;
-	int N = 10000;
+	int N = 50000;
 
 	vector<vector<double> > data;
 
