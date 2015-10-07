@@ -15,12 +15,16 @@ using namespace std;
 #include <spatialindex/SpatialIndex.h>
 using namespace SpatialIndex;
 
+//This is a Rstar Tree
 class SpatialRtree {
 public:
 	SpatialRtree();
 	virtual ~SpatialRtree();
 
 	void loadData(vector<vector<double> > data);
+
+	void rangeQuery(vector<double>& low, vector<double>& high, vector<id_type>& res);
+	void rangeQueries(vector<vector<double> >& lows, vector<vector<double> >& high, vector<vector<id_type> >& res);
 
 	IStorageManager* msm;
 	ISpatialIndex* stree;
